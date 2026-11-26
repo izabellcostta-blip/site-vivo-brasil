@@ -198,6 +198,26 @@ h1 span{color:#d77aff!important}
 .review-panel p{max-width:560px;margin:0 auto 20px;color:#d0b9e4;line-height:1.75;font-size:14px}
 .review-panel .operator-cta{display:inline-flex;width:auto;min-width:260px}
 @media(max-width:620px){.logo,.logo img,.footer-logo,.footer-logo img{width:128px;height:54px}.review-panel{padding:24px 18px}.review-panel .operator-cta{width:100%;min-width:0}}
+/* Ajuste solicitado: logo somente no início e no rodapé, sem placa/fundo */
+header .nav > a.logo,
+footer .footer-logo {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  padding: 0 !important;
+}
+header .nav > a.logo img,
+footer .footer-logo img {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  object-fit: contain !important;
+}
 </style></head><body><header><div class="container nav"><a class="logo vivo-logo-link" href="#inicio" aria-label="Executiva de Vendas Autorizada Telecom"><img class="vivo-logo-img" src="@@VIVO_LOGO" alt="Executiva de Vendas Autorizada Telecom"></a><nav class="navlinks"><a href="#operadoras">Operadoras e planos</a><a href="#planos">IPTV</a><a href="#avaliacoes">Avaliações</a><a href="#faq">FAQ</a></nav><button class="lang" id="langToggle" type="button" aria-label="Idioma: português" title="Idioma: português"><span class="lang-desktop">PT</span><span class="lang-mobile" aria-hidden="true">🇧🇷</span></button></div></header><main>
 <section class="hero" id="inicio"><div class="container hero-inner"><div><div class="kicker">EXECUTIVA DE VENDAS AUTORIZADA TELECOM</div><h1>Conectividade para<br><span>ir mais longe.</span></h1><p class="hero-copy"><strong>Executiva de Vendas Autorizada Telecom</strong>. Compare internet residencial e empresarial, fibra e combos de Wi-Fi com linha móvel. Consulte cobertura e condições pelo WhatsApp.</p><div class="actions"><a class="btn primary" href="#operadoras">Ver todas as operadoras</a><a class="btn secondary" href="@@WA" target="_blank" rel="noopener">Falar com a executiva</a></div><div class="trust"><span>Atendimento direto</span><span>Internet residencial e empresarial</span><span>Consulte sua região</span></div></div><div class="hero-photo"><img src="@@PHOTO" alt="Família reunida assistindo TV"></div></div></section>
 <section class="br-promo-strip"><div class="container br-promo-inner"><div><span>UMA VANTAGEM A MAIS PARA VOCÊ</span><h2>Contratou uma internet elegível? Ganhe <b>6 meses de IPTV</b>.</h2><p>Consulte a elegibilidade da oferta com a operadora e receba as condições pelo WhatsApp.</p></div><a href="@@VIVO_PROMO" class="btn primary" target="_blank">Saiba como participar</a></div></section><section id="vantagens"><div class="container"><div class="section-head"><div class="eyebrow">VANTAGENS</div><h2>Sua conexão. Seu entretenimento.</h2><p>Atendimento comercial para ajudar você a comparar operadoras, consultar cobertura e escolher a opção ideal.</p></div><div class="features"><article class="feature"><div class="num">01</div><h3>Operadoras parceiras</h3><p>Compare internet fibra residencial, combos Wi-Fi e benefícios conforme sua região.</p></article><article class="feature"><div class="num">02</div><h3>Atendimento personalizado</h3><p>Receba orientação para consultar cobertura, elegibilidade e condições comerciais.</p></article><article class="feature"><div class="num">03</div><h3>Atendimento pelo WhatsApp</h3><p>Fale diretamente com a executiva pelo WhatsApp.</p></article></div></div></section>
