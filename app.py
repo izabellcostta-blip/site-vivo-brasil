@@ -384,7 +384,7 @@ header{position:sticky;top:0}
 })();
 </script>
 </body></html>"""
-    page = page.replace("@@SITE_URL", request.url_root.rstrip("/" )).replace("@@OG_IMAGE_URL", request.url_root.rstrip("/") + "/og-image.jpg?v=3")
+    page = page.replace("@@SITE_URL", request.url_root.rstrip("/" )).replace("@@OG_IMAGE_URL", request.url_root.rstrip("/") + "/og-preview-operadoras-20261126.jpg")
     page = page.replace("@@PHOTO", FAMILY_PHOTO).replace("@@LOGO", USA_LOGO).replace("@@FAVICON", USA_FAVICON).replace("@@VIVO_LOGO", SITE_LOGO).replace("@@VIVO_FAVICON", SITE_FAVICON).replace("@@WA", BR_WHATSAPP_URL)
     page = page.replace("@@RESELL", wa("Olá! Quero saber sobre o programa de revendedores Entretenimento e Conectividade."))
     page = page.replace("@@REVIEW_WA", wa("Olá! Gostaria de enviar uma avaliação real sobre meu atendimento/serviço de internet."))
@@ -412,12 +412,13 @@ def favicon_png():
     return Response(base64.b64decode(raw), mimetype="image/svg+xml", headers={"Cache-Control": "public, max-age=86400"})
 
 @app.route("/og-image.jpg")
+@app.route("/og-preview-operadoras-20261126.jpg")
 def og_image():
     """Serve a real 1200x630 Open Graph image for WhatsApp/social previews."""
     try:
         raw = OG_IMAGE.split(",", 1)[1]
         image_bytes = base64.b64decode(raw)
-        return Response(image_bytes, mimetype="image/jpeg", headers={"Cache-Control": "public, max-age=31536000"})
+        return Response(image_bytes, mimetype="image/jpeg", headers={"Cache-Control": "no-cache, no-store, must-revalidate", "Pragma": "no-cache", "Expires": "0"})
     except Exception:
         return Response(status=404)
 
