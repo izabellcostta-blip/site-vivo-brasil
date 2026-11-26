@@ -241,6 +241,30 @@ footer .footer-logo img {
 .review-invite{grid-column:auto!important;margin-top:4px}
 @media(max-width:760px){.reviews-carousel-shell{grid-template-columns:32px minmax(0,1fr) 32px;gap:5px}.review-nav{width:31px;height:31px}.review-nav svg{width:18px;height:18px}.customer-review-card{flex-basis:100%}.review-carousel-hint{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.customer-reviews-grid{scroll-behavior:auto}.review-nav{transition:none}}
+
+/* Ajuste de navegação responsiva: menu não cobre o conteúdo no celular */
+html{scroll-padding-top:18px}
+section[id],main [id]{scroll-margin-top:22px}
+header{position:sticky;top:0}
+.nav{min-height:82px;height:auto;gap:12px;padding:10px 0}
+.navlinks{gap:clamp(12px,2vw,26px);margin-left:auto;margin-right:18px;flex-wrap:wrap}
+.navlinks a{display:inline-flex;align-items:center;min-height:42px;white-space:nowrap}
+@media(max-width:900px){
+  .nav{min-height:74px}
+  .navlinks{gap:10px;margin-right:12px}
+  .navlinks a{font-size:13px;padding:0 4px}
+}
+@media(max-width:620px){
+  /* Header deixa de acompanhar a rolagem: libera espaço e não fica sobre os cards */
+  header{position:relative;top:auto;backdrop-filter:none}
+  .nav{display:grid;grid-template-columns:minmax(0,1fr) 48px;align-items:center;gap:7px;padding:9px 0 12px;min-height:0}
+  .logo{grid-column:1;grid-row:1;width:126px;height:52px}
+  .lang{grid-column:2;grid-row:1;margin:0;width:46px;height:42px}
+  .navlinks{grid-column:1/-1;grid-row:2;display:flex;flex:initial;width:100%;margin:0;padding:5px 0 2px;gap:5px 7px;overflow:visible;white-space:normal;flex-wrap:wrap;justify-content:center}
+  .navlinks a{font-size:12px;min-height:38px;padding:7px 10px;border:1px solid rgba(190,130,255,.18);border-radius:22px;background:rgba(255,255,255,.035)}
+  .navlinks a:active{background:rgba(150,45,220,.22)}
+  section[id],main [id]{scroll-margin-top:14px}
+}
 </style></head><body><header><div class="container nav"><a class="logo vivo-logo-link" href="#inicio" aria-label="Executiva de Vendas Autorizada Telecom"><img class="vivo-logo-img" src="@@VIVO_LOGO" alt="Executiva de Vendas Autorizada Telecom"></a><nav class="navlinks"><a href="#operadoras">Operadoras e planos</a><a href="#planos">IPTV</a><a href="#avaliacoes">Avaliações</a><a href="#faq">FAQ</a></nav><button class="lang" id="langToggle" type="button" aria-label="Idioma: português" title="Idioma: português"><span class="lang-desktop">PT</span><span class="lang-mobile" aria-hidden="true">🇧🇷</span></button></div></header><main>
 <section class="hero" id="inicio"><div class="container hero-inner"><div><div class="kicker">EXECUTIVA DE VENDAS AUTORIZADA TELECOM</div><h1>Conectividade para<br><span>ir mais longe.</span></h1><p class="hero-copy"><strong>Executiva de Vendas Autorizada Telecom</strong>. Compare internet residencial e empresarial, fibra e combos de Wi-Fi com linha móvel. Consulte cobertura e condições pelo WhatsApp.</p><div class="actions"><a class="btn primary" href="#operadoras">Ver todas as operadoras</a><a class="btn secondary" href="@@WA" target="_blank" rel="noopener">Falar com a executiva</a></div><div class="trust"><span>Atendimento direto</span><span>Internet residencial e empresarial</span><span>Consulte sua região</span></div></div><div class="hero-photo"><img src="@@PHOTO" alt="Família reunida assistindo TV"></div></div></section>
 <section class="br-promo-strip"><div class="container br-promo-inner"><div><span>UMA VANTAGEM A MAIS PARA VOCÊ</span><h2>Contratou uma internet elegível? Ganhe <b>6 meses de IPTV</b>.</h2><p>Consulte a elegibilidade da oferta com a operadora e receba as condições pelo WhatsApp.</p></div><a href="@@VIVO_PROMO" class="btn primary" target="_blank">Saiba como participar</a></div></section><section id="vantagens"><div class="container"><div class="section-head"><div class="eyebrow">VANTAGENS</div><h2>Sua conexão. Seu entretenimento.</h2><p>Atendimento comercial para ajudar você a comparar operadoras, consultar cobertura e escolher a opção ideal.</p></div><div class="features"><article class="feature"><div class="num">01</div><h3>Operadoras parceiras</h3><p>Compare internet fibra residencial, combos Wi-Fi e benefícios conforme sua região.</p></article><article class="feature"><div class="num">02</div><h3>Atendimento personalizado</h3><p>Receba orientação para consultar cobertura, elegibilidade e condições comerciais.</p></article><article class="feature"><div class="num">03</div><h3>Atendimento pelo WhatsApp</h3><p>Fale diretamente com a executiva pelo WhatsApp.</p></article></div></div></section>
