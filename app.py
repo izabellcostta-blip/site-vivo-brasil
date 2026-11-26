@@ -175,7 +175,7 @@ h1 span{color:#d77aff!important}
 .operator-catalog{background:linear-gradient(160deg,#080b14,#100a1b 55%,#070a12);border-top:1px solid #34214d;border-bottom:1px solid #34214d}
 .operator-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .operator-card{min-width:0;padding:22px;border:1px solid #35234d;border-radius:20px;background:linear-gradient(160deg,#151021,#0b0d16);box-shadow:0 18px 38px #0003;display:flex;flex-direction:column}
-.operator-brand{height:96px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:14px;background:#090a12;border:1px solid #29243b;overflow:hidden}
+.operator-brand{height:96px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:14px;background:#ffffff;border:1px solid #ffffff;overflow:hidden}
 .operator-logo{display:block;max-width:82%;max-height:78px;width:auto;height:auto;object-fit:contain;object-position:center;background:transparent!important;border:0;border-radius:0;box-shadow:none}
 .operator-tag{font-size:9px;letter-spacing:1px;color:#c6a0ff;font-weight:900;white-space:nowrap}
 .operator-wordmark{font-size:28px;font-weight:900;color:#eee}
